@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+
+  --linen: #f9ebe3;
+  --black: #4e4e4e;
+  --white: #ffffff;
+  --grey: #f1f1f1;
+  --purple: #68637d;
+  --pink: #dc978d;
+  --green: #558986;
+  --yellow: #fad5a0;
+  --red: #ff0000;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  color: var(--black);
+  font-weight: 400;
+  background-color: var(--linen);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+p {
+  line-height: 1.75rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+main {
+  margin: 2rem 0;
+}
+
+input {
+  width: 100%;
+  display: block;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background-color: var(--grey);
+  color: var(--black);
+  padding: 1rem 1.2rem;
+  border: none;
+  margin: 0.1rem 0;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: var(--green);
+  color: var(--white);
+  font-weight: 500;
+  padding: 1rem 0.7rem;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a {
+  color: var(--black);
+  font-weight: 300;
+  letter-spacing: 1pt;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  margin: 0.1rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+header h1 a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  text-decoration: none;
+}
+
+/**
+ * Mailchimp Errors
+ */
+
+.error-message {
+  color: var(--red);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#mc-status-success {
+  color: var(--green);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 17px;
+  }
+
+  body {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    width: 50%;
+  }
+}
